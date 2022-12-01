@@ -40,8 +40,11 @@ if (isFetching === true) {
     <div>
         
         <img src={details.imageFileName} alt="phone" />
-        <h2>{details.imageFileName}</h2>
-
+        <h2>{details.name}</h2>
+        <p>{details.description}</p>
+        <h3>{details.manufacturer}</h3>
+        <p>Price: {details.price}</p>
+        
 
 
         

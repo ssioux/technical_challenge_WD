@@ -7,7 +7,7 @@ function Home() {
   
     
     <PhoneDetails/>
-
+    
     </div>
   )
 }
