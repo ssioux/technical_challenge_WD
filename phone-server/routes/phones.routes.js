@@ -13,6 +13,7 @@ router.get("/:id", (req, res, next) => {
 
     const {id} = req.params
     res.status(200).json(data[id]);
+    
   });
 
 
