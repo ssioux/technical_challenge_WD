@@ -1,26 +1,28 @@
-body {
-
-}
-
-
 .App {
   text-align: center;
   background-color: darkred;
   color: white;
   margin: 0;
 }
-a:link, a:visited, a:active {
-  text-decoration:none;
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
 }
 
+
+p {
+  text-align: left;
+}
 #box-details {
   width: 50%;
-  height:50%;
+  height: 50%;
+  text-align: left;
 }
 
 .center {
   text-align: center;
-  margin: 150px  0px 0px 300px
+  margin: 150px 0px 0px 300px;
 }
 
 .App-logo {
