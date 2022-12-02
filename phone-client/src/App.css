@@ -20,9 +20,20 @@ p {
   text-align: left;
 }
 
+img {
+  border-radius: 10%;
+  margin-bottom: 30px;
+}
+
 .center {
+  display:flex;
   text-align: center;
-  margin: 150px 0px 0px 300px;
+  margin: 70px 0px 0px 300px;
+}
+
+.block {
+display: block;
+margin-right: 30px;
 }
 
 .App-logo {
