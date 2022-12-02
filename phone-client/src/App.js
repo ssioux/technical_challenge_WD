@@ -3,23 +3,22 @@ import "./App.css";
 
 import PhoneDetails from "./components/PhoneDetails";
 import PhoneList from "./components/PhoneList";
-import Home from "./components/Home";
+
+import PrePage from "./components/PrePage";
 
 function App() {
   return (
     <div className="App" style={{ display: "flex" }}>
-  
-  
-     <div>
-      <PhoneList />
+      <div>
+    <PhoneList />
+
       </div>
 
+    
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/:id" element={<PhoneDetails />} />
-
+        <Route path="/" element={<PrePage />} />
+        <Route path="/:id" element={<PhoneDetails />} />
       </Routes>
-     
     </div>
   );
 }

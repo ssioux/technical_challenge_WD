@@ -1,9 +1,12 @@
 import {useParams, useNavigate} from "react-router-dom"
 import {useState, useEffect} from "react"
 import { phonesDetailsService } from "../services/phones.services"
+import Spinner from 'react-bootstrap/Spinner';
+
+
 
 function PhoneDetails() {
-
+  
 const {id} = useParams()
 const navigate = useNavigate()
 console.log("🚀 ~ file: PhoneDetails.jsx:5 ~ PhoneDetails ~ id", id)
@@ -32,14 +35,20 @@ const getData = async () => {
 
 if (isFetching === true) {
   return (
-    <h3>...Loading</h3> 
+    <Spinner animation="border" role="status">
+    <span className="visually-hidden">Loading...</span>
+  </Spinner>
     )
 }
 
   return (
-    <div>
-        
-        <img src={details.imageFileName} alt="phone" />
+    <div id="box-details" className="center">
+
+
+
+
+        <div style={{backgroundImage: `../../public/images/${details.imageFileName}`, width:"200px"}}></div>
+        <img src={`../../public/images/${details.imageFileName}`} alt="phone" />
         <h2>{details.name}</h2>
         <p>{details.description}</p>
         <h3>{details.manufacturer}</h3>
